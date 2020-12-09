@@ -26,7 +26,7 @@ export default function Contact() {
         >
           <FontAwesomeIcon
             icon={faLinkedin}
-            size="xs"
+            size="2x"
             className="contact__icons"
             color="white"
           />
@@ -39,13 +39,10 @@ export default function Contact() {
         >
           <FontAwesomeIcon
             icon={faGithub}
-            size="xs"
+            size="2x"
             className="contact__icons"
             color="white"
           />
-        </a>
-        <a className="list-group-item" href="#">
-          <i className="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp; Home
         </a>
       </div>
     </div>

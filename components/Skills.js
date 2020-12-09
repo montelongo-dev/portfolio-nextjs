@@ -13,7 +13,7 @@ const skillsList = () => {
       <div className="skills__card">
         <FontAwesomeIcon
           icon={faDatabase}
-          size="xs"
+          size="2x"
           className="skills__icons"
           color="#496d89"
         />
@@ -32,7 +32,7 @@ const skillsList = () => {
       <div className="skills__card">
         <FontAwesomeIcon
           icon={faFileCode}
-          size="xs"
+          size="2x"
           className="skills__icons"
           color="#496d89"
         />
@@ -51,7 +51,7 @@ const skillsList = () => {
       <div className="skills__card">
         <FontAwesomeIcon
           icon={faCogs}
-          size="xs"
+          size="2x"
           className="skills__icons"
           color="#496d89"
         />
@@ -84,8 +84,7 @@ export default function Skills() {
         </a>
         <FontAwesomeIcon
           icon={faDownload}
-          size="xs"
-          transform="shrink-15"
+          size="1x"
           className="skills__resume-download"
           color="#496d89"
         />
