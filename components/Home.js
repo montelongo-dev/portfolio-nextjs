@@ -3,7 +3,7 @@ import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 export default function Home() {
   const ParallaxHeader = () => (
-    <Parallax y={[-200, 200]}>
+    <Parallax y={[-125, 125]}>
       <hr />
       <h1 className="home__header">Sam Montelongo</h1>
       <h2 className="home__subhead">Backend Web Developer</h2>
