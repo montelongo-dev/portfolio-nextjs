@@ -80,12 +80,9 @@ export default function Nav() {
     );
   };
 
-  return <div className="navBar navbar-sticky">{navLinks()}</div>;
-  // return <div>{mobileMenu()}</div>;
-
-  // return Width().width < Width().breakpoint ? (
-  //   <div>{mobileMenu()}</div>
-  // ) : (
-  //   <div className="navBar navbar-sticky">{navLinks()}</div>
-  // );
+  return Width().width < Width().breakpoint ? (
+    <div>{mobileMenu()}</div>
+  ) : (
+    <div className="navBar navbar-sticky">{navLinks()}</div>
+  );
 }

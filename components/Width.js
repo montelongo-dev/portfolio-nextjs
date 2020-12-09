@@ -1,12 +1,27 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Width() {
-  const [width, setWidth] = useState(window.innerWidth);
+  let width = useWindowSize().width;
   const breakpoint = 900;
+  return { width, breakpoint };
+}
+
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+  });
 
   useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
+    if (typeof window !== "undefined") {
+      function handleResize() {
+        setWindowSize({
+          width: window.innerWidth,
+        });
+      }
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
-
-  return { width, breakpoint };
+  return windowSize;
 }
