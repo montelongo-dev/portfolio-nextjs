@@ -1,0 +1,34 @@
+import React from "react";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+
+export default function Home() {
+  const ParallaxHeader = () => (
+    <Parallax y={[-200, 200]} tagOuter="figure">
+      <hr />
+      <h1 className="home__header">Sam Montelongo</h1>
+      <h2 className="home__subhead">Backend Web Developer</h2>
+      <hr />
+    </Parallax>
+  );
+
+  return (
+    <div id="home">
+      <ParallaxBanner
+        layers={[
+          {
+            image: "/images/bg_desktop.jpeg",
+            amount: 0.2,
+          },
+        ]}
+        style={{
+          height: "100%",
+          width: "100%",
+        }}
+      >
+        <div className="home">
+          <ParallaxHeader />
+        </div>
+      </ParallaxBanner>
+    </div>
+  );
+}

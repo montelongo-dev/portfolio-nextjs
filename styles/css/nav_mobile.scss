@@ -1,0 +1,47 @@
+/* ---------------------- MOBILE NAV ---------------------- */
+@at-root .bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: darkgrey;
+}
+
+.bm-burger-bars-hover {
+  background: #496d89;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  right: 20px !important;
+  top: 20px !important;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background-color: rgba(34, 49, 63, 1);
+  padding: 3em 0.2em;
+  font-size: 1.05em;
+  height: 100%;
+}
+
+.bm-item-list {
+  padding: 1.5em 2rem;
+}
+
+.bm-item {
+  letter-spacing: 0.17rem;
+  padding-bottom: 1.5rem;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
