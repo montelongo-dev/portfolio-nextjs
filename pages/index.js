@@ -6,11 +6,11 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 
-export default function Home2() {
+export default function Portfolio() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Sam Montelongo | Backend Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
