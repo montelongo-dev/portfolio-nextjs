@@ -25,19 +25,21 @@ export default function Skills({ resume, categories, skills }) {
     <div id="skills" className="skills">
       <h4 className="skills__title">Skills</h4>
       <div className="skills__resume">
-        <a
-          href="https://docs.google.com/document/d/1BICUnFTkCIH9-R1BilRKAlT4PCI128aKCA1UUGcn7Ps/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h4>Download Resume</h4>
-        </a>
-        <FontAwesomeIcon
-          icon={faDownload}
-          size="1x"
-          className="skills__resume-download"
-          color="#496d89"
-        />
+        {resumeState.map((data) => {
+          return (
+            <>
+              <a href={data.url} target="_blank" rel="noopener noreferrer">
+                <h4>Download Resume</h4>
+              </a>
+              <FontAwesomeIcon
+                icon={data.fa_icon}
+                size="1x"
+                className="skills__resume-download"
+                color="#496d89"
+              />
+            </>
+          );
+        })}
       </div>
 
       <div className="skills__container">
