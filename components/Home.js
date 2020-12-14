@@ -1,12 +1,12 @@
 import React from "react";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
-export default function Home() {
+export default function Home({ home }) {
   const ParallaxHeader = () => (
     <Parallax y={[-125, 125]}>
       <hr />
-      <h1 className="home__header">Sam Montelongo</h1>
-      <h2 className="home__subhead">Backend Web Developer</h2>
+      <h1 className="home__header">{home.header}</h1>
+      <h2 className="home__subhead">{home.subhead}</h2>
       <hr />
     </Parallax>
   );
@@ -32,3 +32,25 @@ export default function Home() {
     </div>
   );
 }
+
+// export async function getStaticProps() {
+//   const res = await fetch("http://localhost:1337/home");
+//   const home = await res.json();
+
+//   return {
+//     props: { home },
+//   };
+// }
+
+// export function Test() {
+//   async function getStaticProps() {
+//     const res = await fetch("http://localhost:1337/home");
+//     const home = await res.json();
+
+//     console.log("TEST ---", test);
+
+//     return {
+//       props: { home },
+//     };
+//   }
+// }

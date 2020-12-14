@@ -8,10 +8,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "../styles/css/style.css";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
 config.autoAddCss = false;
 
-library.add(faCogs, faDatabase, faDownload, faFileCode);
+library.add(faCogs, faDatabase, faDownload, faFileCode, fas);
 
 function MyApp({ Component, pageProps }) {
   return (

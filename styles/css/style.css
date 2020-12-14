@@ -155,7 +155,7 @@ a {
   width: 100%;
 }
 
-.about__h1 {
+.about h1 {
   font-size: 1.2rem;
   line-height: 1.4;
   letter-spacing: -0.03rem;
@@ -164,7 +164,7 @@ a {
   color: white;
 }
 
-.about__h2 {
+.about h2 {
   font-size: 1.05rem;
   line-height: 1.4;
   margin: 0.5rem 0 0.5rem 0;

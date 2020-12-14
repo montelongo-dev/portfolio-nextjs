@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, userEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCogs,
@@ -6,71 +6,21 @@ import {
   faDownload,
   faFileCode,
 } from "@fortawesome/free-solid-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
-const skillsList = () => {
-  return (
-    <>
-      <div className="skills__card">
-        <FontAwesomeIcon
-          icon={faDatabase}
-          size="2x"
-          className="skills__icons"
-          color="#496d89"
-        />
-        <h3>Backend</h3>
-        <hr />
-        <ul className="skills__items">
-          <li>Python</li>
-          <li>Django</li>
-          <li>Wagtail</li>
-          <li>REST APIs</li>
-          <li>Postgres</li>
-          <li>SQL</li>
-        </ul>
-      </div>
+export default function Skills({ resume, categories, skills }) {
+  const [resumeState, setResumeState] = useState([]);
+  const [categoriesState, setCategoriesState] = useState([]);
 
-      <div className="skills__card">
-        <FontAwesomeIcon
-          icon={faFileCode}
-          size="2x"
-          className="skills__icons"
-          color="#496d89"
-        />
-        <h3>Frontend</h3>
-        <hr />
-        <ul className="skills__items">
-          <li>Javascript</li>
-          <li>React Native</li>
-          <li>React</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-        </ul>
-      </div>
+  useEffect(() => {
+    resume.map((data) => {
+      setResumeState((resumeState) => [...resumeState, data]);
+    });
+    categories.map((data) => {
+      setCategoriesState((categoriesState) => [...categoriesState, data]);
+    });
+  }, []);
 
-      <div className="skills__card">
-        <FontAwesomeIcon
-          icon={faCogs}
-          size="2x"
-          className="skills__icons"
-          color="#496d89"
-        />
-        <h3>Devops</h3>
-        <hr />
-        <ul className="skills__items">
-          <li>Linux CLI</li>
-          <li>Bash Scripting</li>
-          <li>Docker</li>
-          <li>Heroku</li>
-          <li>AWS</li>
-          <li>Git</li>
-        </ul>
-      </div>
-    </>
-  );
-};
-
-export default function Skills() {
   return (
     <div id="skills" className="skills">
       <h4 className="skills__title">Skills</h4>
@@ -89,7 +39,29 @@ export default function Skills() {
           color="#496d89"
         />
       </div>
-      <div className="skills__container">{skillsList()}</div>
+
+      <div className="skills__container">
+        {categoriesState.map((data) => {
+          return (
+            <div className="skills__card">
+              <FontAwesomeIcon
+                size="2x"
+                className="skills__icons"
+                color="#496d89"
+                icon={data.fa_icon} // TODO this is adding double quotes. Need to remove them.
+              />
+              <h3>{data.category}</h3>
+              <hr />
+              <ul className="skills__items">
+                {skills.map((skill) => {
+                  if (data.category == skill.category.category)
+                    return <li key={skill.id}>{skill.skill}</li>;
+                })}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
