@@ -7,8 +7,9 @@ import {
   faFileCode,
 } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "../styles/css/style.css";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import "../styles/contact_form/main.css";
+import "../styles/css/style.css";
 
 config.autoAddCss = false;
 

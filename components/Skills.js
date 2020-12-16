@@ -24,6 +24,7 @@ export default function Skills({ resume, categories, skills }) {
   return (
     <div id="skills" className="skills">
       <h4 className="skills__title">Skills</h4>
+
       <div className="skills__resume">
         {resumeState.map((data) => {
           return (
@@ -41,7 +42,6 @@ export default function Skills({ resume, categories, skills }) {
           );
         })}
       </div>
-
       <div className="skills__container">
         {categoriesState.map((data) => {
           return (

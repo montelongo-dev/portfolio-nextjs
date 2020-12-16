@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 @import "./nav_mobile.scss";
 
+// html,
 body {
   color: lightgrey;
   margin: 0;
@@ -10,12 +11,9 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.test {
-  min-height: 10vh;
-  background-position: left;
-  max-width: 800px;
+  // width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 a {
@@ -74,6 +72,7 @@ a {
   font-weight: 400;
   font-size: 30px;
   font-size: 1.85rem;
+  text-align: center;
 }
 
 .home__subhead {
@@ -85,6 +84,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding-bottom: 0.7rem;
+  text-align: center;
 }
 
 /* ABOUT */
@@ -201,10 +201,10 @@ a {
   padding: 0.01rem;
 }
 
-/* CONTACT */
+/* CONTACT ************************************************* */
 
 .contact {
-  @include flex-col(100vh);
+  // @include flex-col(100vh);
   align-items: flex-start;
   text-align: left;
   padding: 20px 20px 25% 20px;
@@ -227,7 +227,7 @@ a {
   flex-direction: column;
 }
 
-.contact__h2 {
+.contact h2 {
   font-size: 1.2rem;
   line-height: 1.4;
   margin: 0.5rem 0 0.5rem 0;
@@ -354,7 +354,7 @@ a {
     padding-bottom: 0.5rem;
   }
 
-  .contact__h2 {
+  .contact h2 {
     font-size: 1.7rem;
     letter-spacing: -0.005rem;
     padding: 0.7rem 0;

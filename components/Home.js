@@ -32,25 +32,3 @@ export default function Home({ home }) {
     </div>
   );
 }
-
-// export async function getStaticProps() {
-//   const res = await fetch("http://localhost:1337/home");
-//   const home = await res.json();
-
-//   return {
-//     props: { home },
-//   };
-// }
-
-// export function Test() {
-//   async function getStaticProps() {
-//     const res = await fetch("http://localhost:1337/home");
-//     const home = await res.json();
-
-//     console.log("TEST ---", test);
-
-//     return {
-//       props: { home },
-//     };
-//   }
-// }
