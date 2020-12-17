@@ -450,6 +450,10 @@ a {
 }
 
 @media (min-width: 1000px) {
+  /* CONTACT */
+  .contact__icon-container {
+    padding-top: 40px;
+  }
   /* SKILLS */
   .skills {
     height: 100%;
@@ -470,8 +474,6 @@ a {
             justify-content: center;
   }
   .skills__card {
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     -webkit-transition: 0.3s;
     transition: 0.3s;
     margin: 1rem 3%;

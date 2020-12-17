@@ -370,10 +370,19 @@ a {
     display: flex;
     width: 100%;
     justify-content: center;
+    // padding-top: 40px;
   }
 }
 
 @media (min-width: 1000px) {
+  /* CONTACT */
+  .contact__icon-container {
+    // display: flex;
+    // width: 100%;
+    // justify-content: center;
+    padding-top: 40px;
+  }
+
   /* SKILLS */
 
   .skills {
@@ -394,7 +403,7 @@ a {
   }
 
   .skills__card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     margin: 1rem 3%;
     padding: 4rem 4rem;

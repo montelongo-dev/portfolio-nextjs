@@ -6,7 +6,8 @@ import {
   faDownload,
   faFileCode,
 } from "@fortawesome/free-solid-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+// import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Skills({ resume, categories, skills }) {
   const [resumeState, setResumeState] = useState([]);
@@ -63,6 +64,34 @@ export default function Skills({ resume, categories, skills }) {
             </div>
           );
         })}
+      </div>
+
+      <div className="contact__icon-container">
+        <a
+          href="https://www.linkedin.com/in/sam-montelongo-8139b2134/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            size="2x"
+            className="contact__icons"
+            color="#496d89"
+          />
+        </a>
+
+        <a
+          href="https://github.com/montelongo-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="2x"
+            className="contact__icons"
+            color="#496d89"
+          />
+        </a>
       </div>
     </div>
   );

@@ -136,6 +136,7 @@ input.input {
 textarea.input {
   min-height: 160px;
   padding: 19px 20px 0 23px;
+  resize: none;
 }
 
 /* FOCUS INPUT */
@@ -339,10 +340,7 @@ textarea.input {
   .wrap-contact {
     padding: 40px 15px 40px 15px;
     text-align: center;
-  }
-  textarea.input {
-    min-height: 100px;
-    padding: 19px 20px 0 23px;
+    padding: 40px;
   }
 }
 
