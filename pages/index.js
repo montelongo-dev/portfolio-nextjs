@@ -12,6 +12,7 @@ export default function Portfolio({
   resume,
   categories,
   skills,
+  links,
   contact,
 }) {
   return (
@@ -24,7 +25,12 @@ export default function Portfolio({
       <Nav />
       <Home home={home} />
       <About about={about} />
-      <Skills resume={resume} categories={categories} skills={skills} />
+      <Skills
+        resume={resume}
+        categories={categories}
+        skills={skills}
+        links={links}
+      />
       <Contact contact={contact} />
     </div>
   );
@@ -40,14 +46,17 @@ export async function getStaticProps() {
 
   const resContact = await fetch("http://localhost:1337/contact");
 
+  const resLinks = await fetch("http://localhost:1337/links");
+
   const home = await resHome.json();
   const about = await resAbout.json();
   const resume = await resResumes.json();
   const categories = await resCategories.json();
   const skills = await resSkills.json();
   const contact = await resContact.json();
+  const links = await resLinks.json();
 
   return {
-    props: { home, about, resume, categories, skills, contact },
+    props: { home, about, resume, categories, skills, links, contact },
   };
 }
