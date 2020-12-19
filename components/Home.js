@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
-export default function Home({ home }) {
+export default function Home({ data }) {
+  const [portfolioData, setPortfolioData] = useState([]);
+
+  useEffect(() => {
+    setPortfolioData(data[0]);
+  }, []);
+
   const ParallaxHeader = () => (
     <Parallax y={[-125, 125]}>
       <hr />
-      <h1 className="home__header">{home.header}</h1>
-      <h2 className="home__subhead">{home.subhead}</h2>
+      <h1 className="home__header">{portfolioData.header}</h1>
+      <h2 className="home__subhead">{portfolioData.subhead}</h2>
       <hr />
     </Parallax>
   );

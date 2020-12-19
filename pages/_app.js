@@ -10,7 +10,7 @@ config.autoAddCss = false;
 
 library.add(fas, faGithub, faLinkedin);
 
-function MyApp({ Component, pageProps }) {
+function PortfolioApp({ Component, pageProps }) {
   return (
     <ParallaxProvider>
       <Component {...pageProps} />
@@ -18,4 +18,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default PortfolioApp;
