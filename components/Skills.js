@@ -16,10 +16,10 @@ export default function Skills({ data }) {
   useEffect(() => {
     setResume(data[0].resume);
     setLinks(data[0].links);
-    setCategories(data[0].skillComponent);
+    setCategories(data[0].category);
   }, []);
 
-  // Workaround to remove "" from data from API endpoint
+  // Hack to remove DOUBLE QUOTES from API endpoint data when entering icon name into FA props
   const icon = (icon_name) => {
     return icon_name == "faDatabase"
       ? faDatabase
