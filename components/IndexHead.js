@@ -4,25 +4,16 @@ import Head from "next/head";
 export default function IndexHead() {
   return (
     <Head>
-      <title>Sam Montelongo | Backend Web Developer</title>
-      <link
-        rel="icon"
-        href="https://polite-kangaroo-2.loca.lt/images/favicon.ico"
-      />
+      <title>{process.env.META_TITLE}</title>
+      <link rel="icon" href={process.env.META_ICON} />
 
-      <meta
-        property="og:title"
-        content="Sam Montelongo | Backend Web Developer"
-      />
-      <meta property="og:url" content="https://rusty-nailz.com/" />
-      <meta
-        property="og:image"
-        content="https://polite-kangaroo-2.loca.lt/images/og_image.png"
-      />
+      <meta property="og:title" content={process.env.META_TITLE} />
+      <meta property="og:url" content={process.env.META_SITE_URL} />
+      <meta property="og:image" content={process.env.META_OG_IMAGE} />
       <meta property="og:type" content="article" />
       <meta
         property="og:description"
-        content="I’m Sam Montelongo, an experienced backend web developer specializing in creating dynamic web applications."
+        content={process.env.META_OG_DESCRIPTION}
       />
     </Head>
   );

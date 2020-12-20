@@ -10,11 +10,7 @@ import IndexHead from "../components/IndexHead";
 export default function Portfolio({ data }) {
   return (
     <div>
-      {/* <Head>
-        <title>Sam Montelongo | Backend Web Developer</title>
-      </Head> */}
       <IndexHead />
-
       <Nav />
       <Home data={data} />
       <About data={data} />
