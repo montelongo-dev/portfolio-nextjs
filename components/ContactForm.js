@@ -4,7 +4,12 @@ export default function ContactForm() {
   return (
     <div className="container-contact">
       <div className="wrap-contact">
-        <form className="contact-form validate-form">
+        <form
+          className="contact-form validate-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <div
             className="wrap-input validate-input"
             data-validate="Name is required"
