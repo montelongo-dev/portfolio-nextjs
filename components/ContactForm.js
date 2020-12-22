@@ -7,16 +7,22 @@ export default function ContactForm() {
         <form
           className="contact-form validate-form"
           name="contact"
-          // action='/contact'
           method="POST"
+          netlify-honeypot="bot-field"
           data-netlify="true"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+          <input required type="hidden" name="form-name" value="contact" />
           <div
             className="wrap-input validate-input"
             data-validate="Name is required"
           >
             <input
+              required
               className="input"
               type="text"
               name="name"
@@ -31,6 +37,7 @@ export default function ContactForm() {
             data-validate="Valid email is required: ex@abc.xyz"
           >
             <input
+              required
               className="input"
               type="text"
               name="email"
