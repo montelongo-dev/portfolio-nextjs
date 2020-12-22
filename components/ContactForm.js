@@ -7,9 +7,11 @@ export default function ContactForm() {
         <form
           className="contact-form validate-form"
           name="contact"
+          // action='/contact'
           method="POST"
           data-netlify="true"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div
             className="wrap-input validate-input"
             data-validate="Name is required"
