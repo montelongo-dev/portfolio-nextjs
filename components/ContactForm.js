@@ -11,11 +11,11 @@ export default function ContactForm() {
           netlify-honeypot="bot-field"
           data-netlify="true"
         >
-          <p class="hidden">
+          <div class="hidden">
             <label>
               Don’t fill this out if you’re human: <input name="bot-field" />
             </label>
-          </p>
+          </div>
           <input required type="hidden" name="form-name" value="contact" />
           <div
             className="wrap-input validate-input"

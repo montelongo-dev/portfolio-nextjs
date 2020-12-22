@@ -21,6 +21,10 @@ a {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 @mixin flex-col($height) {
   display: flex;
   flex-direction: column;

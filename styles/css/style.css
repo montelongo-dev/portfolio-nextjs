@@ -65,6 +65,10 @@ a {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 /* NAV */
 .nav__link {
   display: inline-block;
