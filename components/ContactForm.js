@@ -52,6 +52,7 @@ export default function ContactForm() {
             data-validate="Message is required"
           >
             <textarea
+              required
               className="input"
               name="message"
               placeholder="Message"
