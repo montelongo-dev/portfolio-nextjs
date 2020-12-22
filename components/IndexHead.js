@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 
-// Test
 export default function IndexHead() {
   return (
     <Head>
