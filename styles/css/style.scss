@@ -60,10 +60,15 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+  // background-color: #1e2022; // I like
+  background-color: #000000;
+  // background: rgb(14, 30, 37);
+  color: #fff;
 }
 
 .home hr {
   @include hr(100%, lightgrey);
+  // @include hr(100%, #000000);
 }
 
 .home__header {
@@ -96,7 +101,9 @@ a {
   align-items: flex-start;
   text-align: left;
   padding: 2px 20px 25% 20px;
-  background-color: rgba(34, 49, 63, 1);
+  // background-color: rgba(34, 49, 63, 1);
+  background-color: #0e1216;
+  // background-color: #000;
 }
 
 .about__title {
@@ -132,10 +139,13 @@ a {
 .skills {
   height: 100%;
   padding: 20px;
+  // color: #0e1216;
+  // background-color: #a3adb7;
 }
 
 .skills__title {
-  @include section_title(#496d89, #496d89, 0.9rem);
+  // @include section_title(#496d89, #496d89, 0.9rem);
+  @include section_title(#4b5156, #4b5156, 0.9rem);
   font-weight: 600;
   letter-spacing: 0.25rem;
   // margin-bottom: 3rem;
@@ -160,13 +170,15 @@ a {
 
 .skills h3 {
   margin: 0;
-  color: #496d89;
+  // color: #496d89;
+  color: #4b5156;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
 
 .skills hr {
-  @include hr(50%, #496d89);
+  // @include hr(50%, #496d89);
+  @include hr(50%, #4b5156);
 }
 
 .skills__items {
@@ -181,7 +193,8 @@ a {
   padding-right: 2.8rem;
   letter-spacing: 0.1rem;
   text-align: center;
-  color: #496d89;
+  // color: #496d89;
+  color: #4b5156;
 }
 
 .skills__resume {
@@ -196,7 +209,8 @@ a {
 
 .skills__resume h4 {
   padding: 0 0.4rem;
-  color: #496d89;
+  // color: #496d89;
+  color: #4b5156;
 }
 
 .skills__resume-download {
@@ -210,7 +224,8 @@ a {
   align-items: flex-start;
   text-align: left;
   padding: 20px 20px 25% 20px;
-  background-color: #496d89;
+  // background-color: #496d89;
+  background-color: #4b5156;
 }
 
 .contact__title {
@@ -266,7 +281,8 @@ a {
 
   .navBar {
     width: 100%;
-    background-color: rgba(34, 49, 63, 1);
+    // background-color: rgba(34, 49, 63, 1);
+    background-color: #0e1216;
     color: white;
     display: flex;
     justify-content: flex-end;
@@ -418,7 +434,7 @@ a {
 
   .skills h3 {
     margin: 0;
-    color: #496d89;
+    // color: #496d89;
     text-transform: uppercase;
     font-size: 1.1rem;
   }
@@ -427,7 +443,7 @@ a {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #496d89;
+    // border: 1px solid #496d89;
   }
 
   .skills__items {

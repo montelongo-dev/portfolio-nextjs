@@ -22,13 +22,15 @@ export default function Home({ data }) {
       <ParallaxBanner
         layers={[
           {
-            image: "/images/bg_desktop.jpeg",
+            // image: "/images/bg_desktop.jpeg",
+            image: "/images/bg_1.jpg",
             amount: 0.2,
           },
         ]}
         style={{
           height: "100%",
-          width: "100%",
+          // width: "100%",
+          // opacity: 0.75,
         }}
       >
         <div className="home">
