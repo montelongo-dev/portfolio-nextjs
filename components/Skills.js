@@ -47,7 +47,7 @@ export default function Skills({ data }) {
             icon={icon(resume.fa_icon)}
             size="1x"
             className="skills__resume-download"
-            color="#4B5156"
+            color="grey"
           />
         </div>
       );
@@ -65,7 +65,7 @@ export default function Skills({ data }) {
                   icon={icon(data.fa_icon)}
                   size="2x"
                   className="contact__icons"
-                  color="#4B5156"
+                  color="grey"
                 />
               </a>
             );
@@ -86,7 +86,7 @@ export default function Skills({ data }) {
               <FontAwesomeIcon
                 size="2x"
                 className="skills__icons"
-                color="#4B5156"
+                color="grey"
                 icon={icon(data.fa_icon)}
               />
               <h3>{data.category}</h3>
