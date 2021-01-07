@@ -65,7 +65,7 @@ a {
 }
 
 .home hr {
-  @include hr(100%, lightgrey);
+  @include hr(100%, #fff);
 }
 
 .home__header {
