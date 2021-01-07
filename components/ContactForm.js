@@ -5,6 +5,7 @@ export default function ContactForm() {
     <div className="container-contact">
       <div className="wrap-contact">
         <form
+          action="/contact"
           className="contact-form validate-form"
           name="contact"
           method="POST"
