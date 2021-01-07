@@ -335,6 +335,18 @@ a {
   color: #496d89;
 }
 
+.contact__submission {
+  margin: 13rem 2.5rem;
+  color: #000000;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.contact__submission a {
+  margin-top: 150rem;
+  color: #000000;
+}
+
 @media (min-width: 600px) {
   /* NAV */
   .navBar {
@@ -445,6 +457,12 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .contact__submission {
+    padding-top: 20rem;
+    font-size: 1.6rem;
+    width: auto;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -495,6 +513,12 @@ a {
   .skills__items {
     width: 100%;
     margin: 0;
+  }
+  .contact__submission {
+    padding-top: 20rem;
+    font-size: 1.6rem;
+    width: auto;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
