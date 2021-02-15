@@ -15,10 +15,10 @@ body {
 }
 
 a {
+  cursor: pointer;
+  letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .hidden {
@@ -32,10 +32,10 @@ a {
 }
 
 @mixin hr($width, $color) {
-  width: $width;
+  border: 1px solid $color;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid $color;
+  width: $width;
 }
 
 @mixin section_title($color, $border-color, $font-size) {
@@ -49,52 +49,52 @@ a {
 
 .nav__link {
   display: inline-block;
-  position: relative;
   padding: 18px 16px;
+  position: relative;
 }
 
 /* HOME */
 
 .home {
   @include flex-col(100vh);
-  justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
   background-color: #000000;
   color: #fff;
+  font-size: 1.4rem;
+  justify-content: center;
 }
 
 .home__header {
-  margin-bottom: 5px;
-  position: relative;
-  z-index: 2;
-  text-transform: uppercase;
-  font-weight: 500;
   font-size: 30px;
   font-size: 1.85rem;
-  text-align: center;
+  font-weight: 500;
+  margin-bottom: 5px;
   margin-top: 0;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
 }
 
 .home__subhead {
-  margin-top: 5px;
-  position: relative;
-  z-index: 2;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
+  margin-top: 5px;
   padding-bottom: 0.7rem;
+  position: relative;
   text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 /* ABOUT */
 
 .about {
   align-items: flex-start;
-  text-align: left;
-  padding: 2px 20px 25% 20px;
   background-color: #0e1216;
+  padding: 2px 20px 25% 20px;
+  text-align: left;
 }
 
 .about__title {
@@ -110,27 +110,25 @@ a {
 
 .about h1 {
   font-size: 1.1rem;
-  line-height: 1.4;
-  letter-spacing: -0.04rem;
-  margin: 0.5rem 0 0.5rem 0;
   font-weight: 600;
-  color: white;
+  letter-spacing: -0.04rem;
+  line-height: 1.4;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 .about h2 {
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.4;
   margin: 0.5rem 0 0.5rem 0;
-  font-weight: 400;
-  color: white;
 }
 
 /* SKILLS */
 
 .skills {
+  color: #555F61;
   height: 100%;
   padding: 20px;
-  color: #555F61;
 }
 
 .skills__title {
@@ -143,13 +141,13 @@ a {
 }
 
 .skills__card {
+  align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 2rem 1rem;
   padding: 1.2rem 0;
+  transition: 0.3s;
 }
 
 .skills__icons {
@@ -157,9 +155,9 @@ a {
 }
 
 .skills h3 {
+  font-size: 1.1rem;
   margin: 0;
   text-transform: uppercase;
-  font-size: 1.1rem;
 }
 
 .skills hr {
@@ -173,22 +171,22 @@ a {
 }
 
 .skills li {
+  letter-spacing: 0.1rem;
   list-style: none;
   padding-right: 2.8rem;
-  letter-spacing: 0.1rem;
   text-align: center;
 }
 
 .skills__resume {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 2rem 0 0.4rem;
 }
 
 .skills h4 {
-  padding: 0 0.4rem;
   color: #555F61;
+  padding: 0 0.4rem;
 }
 
 .skills__resume-download {
@@ -199,9 +197,9 @@ a {
 
 .contact {
   align-items: flex-start;
-  text-align: left;
-  padding: 20px 20px 25% 20px;
   background-color: #4b5156;
+  padding: 20px 20px 25% 20px;
+  text-align: left;
 }
 
 .contact__title {
@@ -221,26 +219,26 @@ a {
 }
 
 .contact h2 {
+  color: white;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.4;
   margin: 0.5rem 0 0.5rem 0;
-  font-weight: 400;
-  color: white;
 }
 
 .contact__email {
+  color: white;
   font-size: 1.3rem;
   letter-spacing: 0.05rem;
   margin: 3rem 0 0 0;
-  color: white;
   text-align: center;
   text-transform: none;
 }
 
 .contact__icon-container {
   display: flex;
-  width: 100%;
   justify-content: center;
+  width: 100%;
 }
 
 .contact__icons {
@@ -248,20 +246,20 @@ a {
 }
 
 .contact a {
-  z-index: 200;
   color: #496d89;
+  z-index: 200;
 }
 
 .contact__submission {
-  margin: 13rem 2.5rem;
   color: #000000;
   font-size: 1.2rem;
   line-height: 1.4;
+  margin: 13rem 2.5rem;
 }
 
 .contact__submission a {
-  margin-top: 150rem;
   color: #000000;
+  margin-top: 150rem;
 }
 
 /* ************************************************* */
@@ -271,11 +269,11 @@ a {
   /* NAV */
 
   .navBar {
-    width: 100%;
     background-color: #0e1216;
     color: white;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
   }
 
   .navbar-sticky {
@@ -287,8 +285,8 @@ a {
   /* HOME */
 
   .home__header {
-    font-weight: 500;
     font-size: 2.2rem;
+    font-weight: 500;
     letter-spacing: 0.2rem;
   }
 
@@ -331,18 +329,18 @@ a {
 
   .skills__title {
     font-size: 1rem;
-    padding-top: 5rem;
     padding-bottom: 0.5rem;
+    padding-top: 5rem;
   }
 
   .skills__card {
+    align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 3rem 3%;
     padding: 4rem 4rem;
+    transition: 0.3s;
   }
 
   .skills__card:hover {
@@ -358,15 +356,15 @@ a {
 
   .contact__title {
     font-size: 1rem;
-    padding-top: 5rem;
     padding-bottom: 0.5rem;
+    padding-top: 5rem;
   }
 
   .contact h2 {
     font-size: 1.3rem;
+    font-weight: 400;
     letter-spacing: -0.005rem;
     padding: 0.7rem 0;
-    font-weight: 400;
   }
 
   .contact__email {
@@ -376,15 +374,15 @@ a {
 
   .contact__icon-container {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
 
   .contact__submission {
-    padding-top: 20rem;
     font-size: 1.6rem;
-    width: auto;
+    padding-top: 20rem;
     text-align: center;
+    width: auto;
   }
 }
 
@@ -437,21 +435,21 @@ a {
 
   .skills__title {
     font-size: 1rem;
-    padding-top: 5rem;
     padding-bottom: 0.5rem;
+    padding-top: 5rem;
   }
 
   .skills__container {
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
 
   .skills__card {
-    transition: 0.3s;
+    flex-basis: 15rem;
     margin: 1rem 3%;
     padding: 4rem 4rem;
-    flex-basis: 15rem;
+    transition: 0.3s;
   }
 
   .skills__icons {
@@ -460,8 +458,8 @@ a {
 
   .skills h3 {
     margin: 0;
-    text-transform: uppercase;
     font-size: 1.1rem;
+    text-transform: uppercase;
   }
 
   .skills li {
@@ -469,20 +467,20 @@ a {
   }
 
   .skills hr {
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
   }
 
   .skills__items {
-    width: 100%;
     margin: 0;
+    width: 100%;
   }
 
   .contact__submission {
-    padding-top: 20rem;
     font-size: 1.6rem;
-    width: auto;
+    padding-top: 20rem;
     text-align: center;
+    width: auto;
   }
 }
