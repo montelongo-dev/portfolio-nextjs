@@ -10,10 +10,8 @@ export default function Home({ data }) {
 
   const ParallaxHeader = () => (
     <Parallax y={[-125, 125]}>
-      <hr />
       <h1 className="home__header">{portfolioData.header}</h1>
       <h2 className="home__subhead">{portfolioData.subhead}</h2>
-      <hr />
     </Parallax>
   );
 
@@ -22,8 +20,8 @@ export default function Home({ data }) {
       <ParallaxBanner
         layers={[
           {
-            image: "/images/bg_1.jpg",
-            amount: 0.2,
+            image: "/images/red_bg.jpg",
+            amount: 0.0,
           },
         ]}
         style={{

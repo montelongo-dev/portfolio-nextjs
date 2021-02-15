@@ -97,22 +97,16 @@ a {
   color: #fff;
 }
 
-.home hr {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #fff;
-}
-
 .home__header {
   margin-bottom: 5px;
   position: relative;
   z-index: 2;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 30px;
   font-size: 1.85rem;
   text-align: center;
+  margin-top: 0;
 }
 
 .home__subhead {
@@ -120,7 +114,7 @@ a {
   position: relative;
   z-index: 2;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding-bottom: 0.7rem;
@@ -152,16 +146,16 @@ a {
 }
 
 .about h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4;
-  letter-spacing: -0.03rem;
+  letter-spacing: -0.04rem;
   margin: 0.5rem 0 0.5rem 0;
-  font-weight: 400;
+  font-weight: 600;
   color: white;
 }
 
 .about h2 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin: 0.5rem 0 0.5rem 0;
   font-weight: 400;
@@ -172,11 +166,12 @@ a {
 .skills {
   height: 100%;
   padding: 20px;
+  color: #555F61;
 }
 
 .skills__title {
-  color: #4b5156;
-  border-bottom: 1px solid #4b5156;
+  color: #555F61;
+  border-bottom: 1px solid #555F61;
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -211,7 +206,6 @@ a {
 
 .skills h3 {
   margin: 0;
-  color: #4b5156;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
@@ -220,7 +214,7 @@ a {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #4b5156;
+  border: 1px solid grey;
 }
 
 .skills__items {
@@ -235,12 +229,10 @@ a {
 }
 
 .skills li {
-  font-size: 1.1rem;
   list-style: none;
   padding-right: 2.8rem;
   letter-spacing: 0.1rem;
   text-align: center;
-  color: #4b5156;
 }
 
 .skills__resume {
@@ -256,9 +248,9 @@ a {
   margin: 2rem 0 0.4rem;
 }
 
-.skills__resume h4 {
+.skills h4 {
   padding: 0 0.4rem;
-  color: #4b5156;
+  color: #555F61;
 }
 
 .skills__resume-download {
@@ -300,7 +292,7 @@ a {
 }
 
 .contact h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin: 0.5rem 0 0.5rem 0;
   font-weight: 400;
@@ -347,6 +339,8 @@ a {
   color: #000000;
 }
 
+/* ************************************************* */
+/* ************************************************* */
 @media (min-width: 600px) {
   /* NAV */
   .navBar {
@@ -387,12 +381,12 @@ a {
     padding-bottom: 0.5rem;
   }
   .about h1 {
-    font-size: 2.4rem;
-    line-height: 3rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
     padding: 0.7rem 0;
   }
   .about h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     letter-spacing: -0.005rem;
     padding: 0.7rem 0;
   }
